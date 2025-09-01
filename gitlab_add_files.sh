@@ -1,12 +1,14 @@
 #!/bin/bash
 
 git status
-sleep(5)
+sleep 5
 
 git branch
-sleep(3)
+sleep 3
 
 echo "Add file then commit:"
+echo "====================="
+echo ""
 read -p "Add file:" file
 read -p "Add commit:" commit
 
@@ -17,12 +19,16 @@ echo $commit
 git add $file
 
 git status
-sleep(5)
-
-git commit -m $commit
-sleep(5)
-
+sleep 5
+echo ""
+git commit -m "$commit"
+sleep 5
+echo ""
 git status
-sleep(5)
+sleep 5
 
+echo "What's next?:"
+echo "1. Push to repo"
+echo "2. Merge to main"
+echo "3. Exit"
 
