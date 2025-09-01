@@ -32,3 +32,12 @@ echo "1. Push to repo"
 echo "2. Merge to main"
 echo "3. Exit"
 
+read $choice
+
+case choice in
+1 ) git push origin
+2 ) git merge origin
+3 ) exit
+esac
+
+
