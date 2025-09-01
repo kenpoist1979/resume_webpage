@@ -7,6 +7,11 @@ on:
     branches:
       - main  # Or your default branch
 
+permissions:
+  id-token: write
+  contents: write
+
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
