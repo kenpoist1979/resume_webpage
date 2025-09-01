@@ -35,9 +35,9 @@ echo "3. Exit"
 read $choice
 
 case choice in
-1 ) git push origin
-2 ) git merge origin
-3 ) exit
+1 ) git push origin;;
+2 ) git merge origin;;
+3 ) exit;;
 esac
 
 
