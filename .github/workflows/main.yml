@@ -24,7 +24,8 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.ACTIONS }}
-          aws-region: us-east-1 # Replace with your AWS region
+          aws-region: us-east-1
+          audience: sts.amazonaws.com # Replace with your AWS region
 
       - name: Sync files to S3
         run: |
